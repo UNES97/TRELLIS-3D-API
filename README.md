@@ -1,7 +1,7 @@
 
-# TRELLIS Microsoft - Dockerized Application by @UNES97
+# TRELLIS Microsoft - Dockerized FastAPI by [UNES97](https://github.com/UNES97)
 
-This repository contains a Dockerized implementation of Microsoft TRELLIS.
+This repository contains a Dockerized implementation of the Microsoft TRELLIS API using FastAPI.
 
 ## Prerequisites
 
@@ -19,28 +19,20 @@ This repository contains a Dockerized implementation of Microsoft TRELLIS.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/UNES97/TRELLIS-DOCKER
-cd TRELLIS-DOCKER
+git clone https://github.com/UNES97/TRELLIS-3D-API
+cd TRELLIS-3D-API
 ```
 
 
 2. Build the Docker image:
 ```bash
-docker build -t gradio-gpu-app .
+docker build -t trellis-fastapi-app .
 ```
 
 3. Run the container:
 ```bash
-docker run --rm -it --gpus all -p 7860:7860 gradio-gpu-app
+docker run -it -p 8000:8000 trellis-fastapi-app
 ```
 
-The application will be available at http://localhost:7860
-
-## Demonstration
-
-
-
-https://github.com/user-attachments/assets/dc7e1f66-b8ed-4df9-8d4e-f9c9167762a9
-
-https://github.com/user-attachments/assets/198cacb5-2587-45d0-a0b3-5d4397b103c4
+The API will be available at http://localhost:8000
 
