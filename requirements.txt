@@ -1,0 +1,41 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+--find-links https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.4.0_cu121.html
+
+# Core ML frameworks
+torch==2.4.0
+torchvision==0.19.0
+xformers==0.0.27.post2
+kaolin==0.17.0
+transformers==4.46.3
+
+# Image processing
+pillow==10.4.0
+imageio==2.36.1
+imageio-ffmpeg==0.5.1
+opencv-python-headless==4.10.0.84
+rembg==2.0.60
+
+# 3D processing libraries
+trimesh==4.5.3
+xatlas==0.0.9
+pyvista==0.44.2
+pymeshfix==0.17.0
+spconv-cu120==2.3.6
+
+# Utilities and dependencies
+numpy
+scipy==1.14.1
+easydict==1.13
+tqdm==4.67.1
+igraph==0.11.8
+onnxruntime==1.20.1
+fastapi>=0.104.0
+python-multipart
+uvicorn[standard]
+pydantic>=2.0.0
+
+# Custom dependencies
+flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.0.post2/flash_attn-2.7.0.post2+cu12torch2.4cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+diff_gaussian_rasterization @ https://huggingface.co/spaces/JeffreyXiang/TRELLIS/resolve/main/wheels/diff_gaussian_rasterization-0.0.0-cp310-cp310-linux_x86_64.whl
+nvdiffrast @ https://huggingface.co/spaces/JeffreyXiang/TRELLIS/resolve/main/wheels/nvdiffrast-0.3.3-cp310-cp310-linux_x86_64.whl
+utils3d @ git+https://github.com/EasternJournalist/utils3d.git@9a4eb15e4021b67b12c460c7057d642626897ec8
